@@ -410,6 +410,7 @@ void PktHandler(void)
 		void *ptr = &wxTmp1;
 		float16_t wxFloat16 = *(float16_t*)ptr;
 		wxTemp = F16toF32(wxFloat16);
+		wxTemp = (wxTemp * 1.8) + 32;  // C to F conversion
 		
 		if(wxTemp > wxTemp_max)
 			wxTemp_max = wxTemp;
