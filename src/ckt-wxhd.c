@@ -1025,8 +1025,8 @@ int main(void)
 			case SCREEN_RESET_IDLE:
 				if (SOFTKEY_2 & buttonsPressed)
 				{
-					wxTemp_max = -99.9;
-					wxTemp_min = 199.9;
+					wxTemp_max = -INFINITY;
+					wxTemp_min = INFINITY;
 					screenState = SCREEN_ALMNC_DRAW;
 				}
 				else if (SOFTKEY_3 & buttonsPressed)
